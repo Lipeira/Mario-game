@@ -44,7 +44,7 @@ const loop = setInterval(() => { /* função de executar a cada tempo definido *
         mario.style.animation = 'none';
         mario.style.bottom = `${marioPosition}px`
 
-        mario.src = '/images/gameover.webp';
+        mario.src = '/gameover.webp';
         mario.style.width = '105px'
         mario.style.marginLeft = '50px'
 
