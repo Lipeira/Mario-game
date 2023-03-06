@@ -24,7 +24,7 @@ body{
    respeitarem a delimitação */
    overflow: hidden; /* tudo que sair da tela
    será escondido */
-   background-image: url(/images/background.gif);
+   background-image: url(/background.gif);
 }
 /* margin 0 auto centraliza a div, distribui as margens
 com auto */
