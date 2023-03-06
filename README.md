@@ -2,7 +2,7 @@
 Este é um jogo simples do Mario desenvolvido em HTML, CSS e JS. O objetivo do jogo é controlar o personagem Mario e fazer ele pular para desviar dos obstáculos que surgem no caminho.
 
 ## Como jogar
-Para começar a jogar, basta abrir o arquivo `index.html` em seu navegador web preferido. Para controlar o personagem, pressione qualquer tecla para fazê-lo pular. Você deve pular no momento certo para evitar os obstáculos.
+Para começar a jogar, basta abrir o arquivo `index.html` em seu navegador web preferido ou [CLIQUE AQUI](https://merry-kringle-2745a3.netlify.app/). Para controlar o personagem, pressione qualquer tecla para fazê-lo pular. Você deve pular no momento certo para evitar os obstáculos.
 <br><br>
 O objetivo do jogo é chegar o mais longe possível sem colidir com nenhum obstáculo. Um contador no canto superior direito está contando o máximo de tempo que você conseguiu sobreviver
 
