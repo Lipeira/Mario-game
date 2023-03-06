@@ -1,0 +1,123 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+}
+
+body{
+    height: 100%;
+}
+.game {
+   width: 100%; /* Width pode ser definido na
+   tela, de acordo com o body, valor relativo */
+   height: 80vh; /* o height deve ser valor
+   absoluto, pois o body está sem o height, então
+   o height absoluto na div aumenta o body */
+   border-bottom:15px solid purple;
+   margin: 0 auto;
+   position: relative; /* para as imagens de dentro
+   respeitarem a delimitação */
+   overflow: hidden; /* tudo que sair da tela
+   será escondido */
+   background-image: url(/images/background.gif);
+}
+/* margin 0 auto centraliza a div, distribui as margens
+com auto */
+
+.mario {
+    width: 150px;
+    position: absolute; /* Nenhuma imagem interferir
+    no comportamento da outra! */
+    bottom: 0px; /* ease out é
+    para cair mais devagar */
+}
+
+.pipe {
+    position: absolute; /* para nenhuma interferir
+    no comportamento da outra */
+    bottom: 0; /* definir ele em baixo */
+    width: 140px; /* tamanho do pipe */
+
+    animation: pipe-animation 2s infinite linear; /* infinite - repetir
+    a animação infinitamente, 2s é a duração da animação, 
+    se colocar um menor tempo, a animação vai ser mais rápida
+    De começo, a animação é acelerada, para colocar
+    com velocidade linear coloca o atributo linear
+    em animation */
+}
+
+/* Criação de animação, do right 0 para o right 100%*/
+
+.jump {
+    animation: jump 750ms ease-out;
+}
+
+.gameover {
+    position: absolute;
+    margin: 0 auto;
+    font-family: 'Silkscreen', cursive;
+    font-size: 80px;
+    color: white;
+    left: 35vw;
+    top: 250px;
+    display: none;
+}
+
+.points {
+    font-family: 'Silkscreen', cursive;
+    position: absolute;
+    font-size: 40px;
+    right: 30px;
+    color: white;
+    background: linear-gradient();
+}
+
+.creditos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.desenvolvido {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+}
+
+@keyframes pipe-animation {
+    from { /* Onde começa */
+        right: -80px; /* -80px é por que a largura da tela
+        é de 80px, se no zero se refere ao começo, portanto
+        -80px é exatamente a imagem fora do gameboard */
+    }
+
+    to { /* onde termina */
+        right: 100%;
+    }
+}
+
+@keyframes jump { /* Mais keyframes, mais tempo caindo */
+    0% { /* porcentagem da animação */
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+    50% { /* metade da animação */
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+
+    100% { /* final da animação */
+        bottom: 0;
+    }
+}
